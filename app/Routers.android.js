@@ -7,6 +7,8 @@ import React, {
   Navigator,
   Text
 } from 'react-native'
+import Main from './main/Main.android'
+import NavToolbar from './navigation/NavToolbar.Android'
 
 var _navigator;
 
@@ -26,7 +28,10 @@ var Routers = React.createClass({
     switch(route.id) {
       case "Main":
         return (
-          <Text>it is main</Text>
+          <View>
+            <NavToolbar title='Global Issue' />
+            <Main></Main>
+          </View>
         )
     }
   },
@@ -42,3 +47,5 @@ var Routers = React.createClass({
 });
 
 module.exports = Routers;
+
+// vi:et:sw=2:ts=2
