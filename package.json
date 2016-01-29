@@ -8,7 +8,8 @@
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
     "bundle": "rnws bundle",
     "test": "eslint src",
-    "start": "rnws start"
+    "start": "rnws start",
+    "css": "node_modules/react-native-css/bin/react-native-css"
   },
   "repository": {
     "type": "git",
