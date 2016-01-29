@@ -23,7 +23,7 @@
       preLoaders: [
         {
           test: /\.(js|jsx|es6)$/,
-          include: path.resolve(__dirname, 'src'),
+          include: path.resolve(__dirname, 'app'),
           loader: 'eslint-loader',
         }
       ],
@@ -45,6 +45,10 @@
             cacheDirectory: true,
             presets: ['es2015', 'stage-1', 'react']
           }
+        },
+        {
+          test: /\.styl$/,
+          loader: 'react-native-css-loader!stylus-loader'
         }
       ]
     }
