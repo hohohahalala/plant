@@ -20,6 +20,8 @@
     "npm": ">=2 <4"
   },
   "dependencies": {
+    "livescript": "^1.4.0",
+    "livescript-loader": "^0.1.5",
     "react-native": "^0.17.0",
     "react-native-css-loader": "^1.0.2"
   },

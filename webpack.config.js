@@ -49,6 +49,10 @@
         {
           test: /\.styl$/,
           loader: 'react-native-css-loader!stylus-loader'
+        },
+        {
+          test: /\.ls$/,
+          loader: 'livescript-loader'
         }
       ]
     }
