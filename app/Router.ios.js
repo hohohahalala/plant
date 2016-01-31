@@ -2,36 +2,28 @@
 
 import React, {
   AppRegistry,
-  View,
   Navigator,
   Text,
-  ListView,
+  View,
   Component,
 } from 'react-native';
+import Main from './components/Main/Main.ios.js'
 
-var plant = React.createClass({
-  getInitialState() {
-    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    return {
-      dataSource: ds.cloneWithRows(['row 1', 'row 2']),
-    };
-  },
+class plant extends Component {
+
+  constructor(props) {
+    super(props)
+  }
+
   renderScene(route, navigator) {
     switch(route.id) {
       case 'Main':
         return (
-          <View>
-            <ListView
-              dataSource={this.state.dataSource}
-              renderRow={this._renderRow}
-              />
-          </View>
+          <Main nav={navigator}></Main>
         );
     }
-  },
-  _renderRow(rowData){
-    return <Text>{rowData}</Text>;
-  },
+  }
+
   render() {
     return (
       <Navigator
@@ -41,7 +33,7 @@ var plant = React.createClass({
       />
     );
   }
-});
+}
 
 AppRegistry.registerComponent('plant', () => plant);
 
