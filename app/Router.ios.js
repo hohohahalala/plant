@@ -9,19 +9,18 @@ import React, {
   Component,
 } from 'react-native';
 
-class plant extends Component {
+var plant = React.createClass({
   getInitialState() {
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     return {
       dataSource: ds.cloneWithRows(['row 1', 'row 2']),
     };
-  }
+  },
   renderScene(route, navigator) {
     switch(route.id) {
       case 'Main':
         return (
           <View>
-            <Text> {this.state.dataSource} </Text>
             <ListView
               dataSource={this.state.dataSource}
               renderRow={this._renderRow}
@@ -29,10 +28,10 @@ class plant extends Component {
           </View>
         );
     }
-  }
+  },
   _renderRow(rowData){
     return <Text>{rowData}</Text>;
-  }
+  },
   render() {
     return (
       <Navigator
@@ -42,7 +41,7 @@ class plant extends Component {
       />
     );
   }
-}
+});
 
 AppRegistry.registerComponent('plant', () => plant);
 
