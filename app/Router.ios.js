@@ -21,6 +21,8 @@ class plant extends Component {
         return (
           <Main nav={navigator}></Main>
         );
+      case 'LastestNews':
+        console.log("ha");
     }
   }
 

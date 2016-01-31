@@ -15,9 +15,11 @@ var styles = StyleSheet.create({
   },
   circle: {
     backgroundColor: '#bbbbbb',
-    height: 50,
-    width: 50,
-    borderRadius: 25
+    height: 80,
+    width: 80,
+    borderRadius: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
   }
 });
 
