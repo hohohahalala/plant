@@ -1,1 +1,1 @@
-# GreenSpot(react-native version, inactive)
+# GreenSpot (inactive)
