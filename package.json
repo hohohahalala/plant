@@ -1,8 +1,8 @@
 {
-  "name": "App",
-  "version": "1.17.0",
-  "description": "A future-facing starter kit for React Native apps.",
-  "author": "Josh Habdas <jhabdas@gmail.com> (http://habd.as)",
+  "name": "GreenSpot",
+  "version": "0.0.0",
+  "description": "",
+  "author": "hohala, kjb",
   "license": "MIT",
   "scripts": {
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhabdas/react-native-webpack-starter-kit"
+    "url": "https://github.com/hohohahalala/plant-react-native"
   },
   "engines": {
     "node": ">=4",
